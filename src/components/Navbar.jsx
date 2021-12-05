@@ -1,4 +1,7 @@
-export default function Navbar({logo, iconNames}){
+import { nav_icons } from "../data/nav_icons";
+import logo from "../assets/img/logo.png";
+
+export default function Navbar(){
     return (
       <div class="navbar">
         <div class="container">
@@ -21,7 +24,7 @@ export default function Navbar({logo, iconNames}){
           </div>
   
           <div class="icones">
-            {iconNames.map((name) => <ion-icon name={name}></ion-icon> )}
+            {nav_icons.map((name) => <ion-icon name={name}></ion-icon> )}
           </div>
 
           <div class="icones-mobile">

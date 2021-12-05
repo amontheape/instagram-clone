@@ -23,10 +23,11 @@ export default function Corpo() {
             }
 
           </div>
+        </div>
 
         <div class="sidebar">
             <User {...user}/>
-        </div>
+        
 
           <div class="sugestoes">
             <div class="titulo">
