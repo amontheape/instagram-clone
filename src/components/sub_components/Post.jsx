@@ -25,7 +25,7 @@ const Post = ({ userImg, user, postImg, likeImg, likeUser, likesNumber }) => (
 					}
 				</div>
 				<div>
-					<ion-icon name="bookmark-outline"></ion-icon>
+					<ion-icon name="bookmark-outline" />
 				</div>
 			</div>
 
@@ -34,7 +34,7 @@ const Post = ({ userImg, user, postImg, likeImg, likeUser, likesNumber }) => (
 					<img src={likeImg} alt="a person who liked the post" />
 					<div class="texto">
 						Curtido por <strong>{likeUser}</strong>
-						{ likesNumber > 2
+						{ Number(likesNumber) > 2
 							? (<> e <strong>{`outras ${likesNumber} pessoas`}</strong></>)
 							: ''
 						}

@@ -3,7 +3,7 @@ export default function Footer() {
   
     return (
       <div class="fundo-mobile">
-        {iconName.map((p) => <ion-icon name={p}></ion-icon> )}
+        {iconName.map((p) => <ion-icon name={p} />)}
       </div>
     )
 }

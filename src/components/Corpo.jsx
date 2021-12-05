@@ -12,7 +12,7 @@ export default function Corpo() {
             }
 
             <div class="setinha">
-              <ion-icon name="chevron-forward-circle"></ion-icon>
+              <ion-icon name="chevron-forward-circle" />
             </div>
           </div>
 
