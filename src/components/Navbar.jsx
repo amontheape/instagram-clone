@@ -1,13 +1,11 @@
-import logo from "../assets/img/logo.png";
-
-export default function Navbar(){
+export default function Navbar({logo, iconNames}){
     return (
       <div class="navbar">
         <div class="container">
           <div class="logo">
             <ion-icon name="logo-instagram"></ion-icon>
             <div class="separador"></div>
-            <img src={logo} />
+            <img src={logo} alt="instagram logo"/>
           </div>
 
           <div class="logo-mobile">
@@ -15,7 +13,7 @@ export default function Navbar(){
           </div>
 
           <div class="instagram-mobile">
-            <img src="./src/assets/img/logo.png" />
+            <img src={logo} alt="instagram logo" />
           </div>
   
           <div class="pesquisa">
@@ -23,7 +21,7 @@ export default function Navbar(){
           </div>
   
           <div class="icones">
-            {iconName.map((name) => <ion-icon name={name}></ion-icon> )}
+            {iconNames.map((name) => <ion-icon name={name}></ion-icon> )}
           </div>
 
           <div class="icones-mobile">
@@ -34,4 +32,3 @@ export default function Navbar(){
     )
 }
 
-const iconName = ['paper-plane-outline', 'compass-outline', 'heart-outline', 'person-outline'];
